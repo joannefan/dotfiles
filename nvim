@@ -46,6 +46,12 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Git integration
+Plug 'tpope/vim-fugitive'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
@@ -236,3 +242,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='luna'
 
 let g:airline_section_z = '%l:%c'
+
+" Open fzf file explorer
+nnoremap <leader>e :FZF<CR>
