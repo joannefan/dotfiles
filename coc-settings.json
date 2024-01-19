@@ -1,0 +1,12 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "json",
+    "css",
+    "javascript",
+    "javascriptreact",
+    "html",
+    "markdown"
+  ],
+  "python.linting.flake8Enabled": true
+}
